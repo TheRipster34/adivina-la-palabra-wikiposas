@@ -1,4 +1,4 @@
-const palabraCorrecta = "amor"; // Palabra a adivinar
+const palabraCorrecta = "amor"; //Palabra a adivinar
 
 function verificarPalabra() {
   const adivinanza = document.getElementById("entradaAdivinanza").value.toLowerCase();
