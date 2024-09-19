@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adiviná la palabra - Wikiposas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Adiviná la palabra</h1>
+
+    <p>Teniendo los frascos en tu poder, estas a punto de resolver el misterio.</p>
+
+    <div id="contenedorPalabra">
+        <div class="letra amarilloclaro" id="letra1"></div>
+        <div class="letra verdeclaro" id="letra2"></div>
+        <div class="letra violetaclaro" id="letra3"></div>
+        <div class="letra celesteclaro" id="letra4"></div>
+    </div>
+
+    <input type="text" id="entradaAdivinanza" maxlength="4" placeholder="Escribí la palabra">
+    <button onclick="verificarPalabra()">Adivinar</button>
+
+    <div id="mensaje"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>

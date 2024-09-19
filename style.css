@@ -1,0 +1,156 @@
+body {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffccdd;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #ff0d81;
+  font-size: 8vw;
+  text-align: center;
+}
+
+p {
+  color: black;
+  font-size: 4.5vw;
+  text-align: center;
+}
+
+#contenedorPalabra {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5vh;
+}
+
+.letra {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 12px;
+  margin: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 7vw;
+  font-weight: bold;
+  background-color: white;
+  box-shadow: 0 2px 6.5px gray;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* CASILLAS INCOMPLETAS */
+.amarilloclaro {
+  background-color: #fee48e;
+}
+
+.verdeclaro {
+  background-color: #aefca7;
+}
+
+.violetaclaro {
+  background-color: #deacff;
+}
+
+.celesteclaro {
+  background-color: #aac9ff;
+}
+
+
+/* CASILLAS COMPLETAS */
+.amarillo {
+  background-color: #ffe432;
+}
+
+.verde {
+  background-color: #52ff42;
+}
+
+.violeta {
+  background-color: #b74cff;
+}
+
+.celeste {
+  background-color: #4086fe;
+}
+
+/* Error */
+.rojo {
+  background-color: #f74f4f;
+}
+
+.animacion-casilla {
+  animation: coloreo 0.5s ease; /* Animación de entrada */
+}
+
+@keyframes coloreo {
+  from {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+input {
+  padding: 2vh;
+  font-size: 5vw;
+  margin-bottom: 3vh;
+  width: 60vw;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #a3a3a3;
+  background-color: rgb(247, 247, 247);
+}
+
+button {
+  padding: 2vh 5vh;
+  font-size: 5vw;
+  font-weight: 700;
+  background-color: #ff0d81;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 24px;
+}
+
+button:hover {
+  background-color: #ce1870;
+}
+
+#mensaje {
+  margin-top: 3vh;
+  font-size: 5vw;
+  font-weight: 700;
+  color: #ff0d81;
+  text-align: center;
+}
+
+/* VERSIÓN MOBILE */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3vw;
+  }
+
+  .letra {
+    width: 5vw;
+    height: 5vw;
+    font-size: 3vw;
+    font-weight: 900;
+  }
+
+  input,
+  button {
+    font-size: 2vw;
+  }
+
+  #mensaje {
+    font-size: 2vw;
+  }
+}
